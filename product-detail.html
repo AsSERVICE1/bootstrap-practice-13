@@ -1,0 +1,402 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sass/main.scss">      
+    <title>Ecommerce - product-detail</title>
+
+   <style>
+        section{
+            padding:60px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container d-none d-lg-block">
+        <nav class="navbar">
+            <div class="container justify-content-center">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" width="162px" height="57px">
+              </a>
+            </div>
+          </nav>
+        <nav class="navbar navbar-expand-lg fixed-sticky">
+            <div class="container-fluid my-2">
+              <div class=" d-none d-lg-flex">
+                <a href="#" class="text-black"><i class="bi bi-search"></i></a>
+              </div>
+              <form class="d-none d-lg-flex m-0 order-lg-2 rounded" id="con" role="search">
+                <a href="cart.html"><i class="bi bi-cart h4 pe-4 text-black"></i></a>
+                <a href="#"><i class="bi bi-heart h4 pe-4 text-black"></i></a>
+                <a href="#"><i class="bi bi-person h4 pe-4 text-black"></i></a>
+              </form>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                    <a class="nav-link active text-home pe-4 text-uppercase nav-text" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Spaces</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Product & services</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">showrooms</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Company</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Media</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+          </nav>
+    </div>
+
+
+    <!--for mobile-->
+
+    <div class="container d-block d-lg-none">
+        <nav class="navbar">
+            <div class="container justify-content-center text-center">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" width="60%">
+              </a>
+            </div>
+          </nav>
+        <nav class="navbar navbar-expand-lg fixed-sticky" style="margin-top: -66px;">
+            <div class="container-fluid my-2">
+              <div class=" d-none d-lg-flex">
+                <a href="#" class="text-black"><i class="bi bi-search"></i></a>
+              </div>
+              <form class=" m-0 order-2 rounded" id="con" role="search">
+                <a href="cart.html"><i class="bi bi-cart h4 pe-4 text-black"></i></a>
+              </form>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                    <a class="nav-link active text-home pe-4 text-uppercase nav-text" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Spaces</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Product & services</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">showrooms</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Company</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Media</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+          </nav>
+    </div>
+
+    <section class=" p-0 bg-bread">
+        <section class=" p-0 mask">
+            <div class="container p-3">
+                <div class="row">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb text-white">
+                          <li class="breadcrumb-item"><a href="index.html" class="bread-a">Home</a></li>
+                          <li class="breadcrumb-item">Table</li>
+                          <li class="breadcrumb-item active" aria-current="page">Product Name</li>
+                        </ol>
+                      </nav>
+                </div>
+            </div>
+        </section>
+        
+    </section>
+
+        
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <img src="images/product-det-1.png" width="100%" alt="product">
+                    <div class="row pt-3">
+                        <div class="col-4 col-lg-3">
+                            <img src="images/product-img1.png" width="100%" alt="product">
+                        </div>
+                        <div class="col-4 col-lg-3">
+                            <img src="images/product-img2.png" width="100%" alt="product">
+                        </div>
+                        <div class="col-4 col-lg-3">
+                            <img src="images/product-img3.png" width="100%" alt="product">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h3 class="product-h3 pt-3">Product Name</h3>
+                    <p class="product-price">199,50 SAR</p>
+                    <p class="product-pp m-0 pb-5">Product Short Description senectus et netus et malesuada fames ac turpis egestas. Vesitbulum tortor quam, feugiat vitae, 
+                        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend </p>
+                    <div class="row justify-content-center justify-content-lg-start ps-0 ps-lg-2 pb-3" style="    align-items: center;">
+                        <div class="col-4 col-lg-2 d-flex" style="border: 1px solid #000; height: 40px; align-items: center;     width: 120px;">
+                            <a href="#" class="text-black"><i class="bi bi-dash-lg pe-4"></i></a>
+                            <p class="m-0">1</p>
+                            <a href="#" class="text-black"><i class="bi bi-plus-lg ps-4"></i></a>
+                        </div>
+                        <div class="col-lg-3 col-5">
+                            <a href="cart.html" class="btn btn-black rounded-2 px-3 px-lg-4 cartt">Add to cart</a>
+                        </div>
+                        <div class="col-2 col-lg-1 d-flex" style="border: 1px solid #000; height: 40px; align-items: center; width: 50px;">
+                            <a href="#" class="text-black"><i class="bi bi-heart pe-4 h4"></i></a>
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="pro-list">Lorem ipsum dolor sit amet,</li>
+                        <li class="pro-list">Lorem ipsum dolor sit amet,</li>
+                        <li class="pro-list">Lorem ipsum dolor sit amet,</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center text-center pb-3">
+                <div class="col-12 col-lg-6">
+                    <a href="#" class="pro-det-a text-home pe-2">Description</a>
+                    <a href="#" class="pro-det-a pe-2">Details</a>
+                    <a href="#" class="pro-det-a">Reviews(0)</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="des-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare euismod arcu, ac laoreet metus pulvinar feugiat.
+                         Praesent in feugiat ante, a dictum nunc. Pellentesque convallis tortor quis purus finibus aliquet. In hac habitasse
+                          platea dictumst. Proin vestibulum ante ac faucibus tristique. Integer quis efficitur dolor, at dignissim dolor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-12 col-lg-6">
+                    <h4 class="related-prod">Related Products</h4>
+                </div>
+            </div>
+            <div class="row mb-3 mt-3">
+                <div class="col-12 col-lg-3 mb-3">
+                    <a href="product-detail.html" class="anker">
+                    <div class="card">
+                        <img src="images/tile5.png" class="card-img-top" alt="tile">
+                        <div class="card-body text-center">
+                          <p class="card-text tile-p">Windsor White Oak</p>
+                            <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49</p>
+                        </div>
+                      </div>
+                      </a>
+                </div>
+
+                <div class="col-12 col-lg-3 mb-3">
+                    <a href="product-detail.html" class="anker">
+                    <div class="card">
+                        <img src="images/tile6.png" class="card-img-top" alt="tile">
+                        <div class="card-body text-center">
+                          <p class="card-text tile-p">Sicily Grey Decor 30x60</p>
+                            <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49 SAR</p>
+                        </div>
+                      </div>
+                      </a>
+                </div>
+
+                <div class="col-12 col-lg-3 mb-3">
+                    <a href="product-detail.html" class="anker">
+                    <div class="card">
+                        <img src="images/tile7.png" class="card-img-top" alt="tile">
+                        <div class="card-body text-center">
+                          <p class="card-text tile-p">Sardinia White</p>
+                            <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49 SAR</p>
+                        </div>
+                      </div>
+                      </a>
+                </div>
+
+                <div class="col-12 col-lg-3 mb-3">
+                    <a href="product-detail.html" class="anker">
+                    <div class="card">
+                        <img src="images/tile8.png" class="card-img-top" alt="tile">
+                        <div class="card-body text-center">
+                          <p class="card-text tile-p">Sicily Grey 30x60</p>
+                            <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49 SAR</p>
+                        </div>
+                      </div>
+                      </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-12 col-lg-6">
+                    <h4 class="related-prod">Recently Viewed Products</h4>
+                </div>
+            </div>
+            <div class="row mb-3 mt-3">
+                <div class="col-12 col-lg-3 mb-3">
+                    <a href="product-detail.html" class="anker">
+                    <div class="card">
+                        <img src="images/tile5.png" class="card-img-top" alt="tile">
+                        <div class="card-body text-center">
+                          <p class="card-text tile-p">Windsor White Oak</p>
+                            <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49</p>
+                        </div>
+                      </div>
+                      </a>
+                </div>
+
+                <div class="col-12 col-lg-3 mb-3">
+                    <a href="product-detail.html" class="anker">
+                    <div class="card">
+                        <img src="images/tile6.png" class="card-img-top" alt="tile">
+                        <div class="card-body text-center">
+                          <p class="card-text tile-p">Sicily Grey Decor 30x60</p>
+                            <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49 SAR</p>
+                        </div>
+                      </div>
+                      </a>
+                </div>
+
+                <div class="col-12 col-lg-3 mb-3">
+                    <a href="product-detail.html" class="anker">
+                    <div class="card">
+                        <img src="images/tile7.png" class="card-img-top" alt="tile">
+                        <div class="card-body text-center">
+                          <p class="card-text tile-p">Sardinia White</p>
+                            <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49 SAR</p>
+                        </div>
+                      </div>
+                      </a>
+                </div>
+
+                <div class="col-12 col-lg-3 mb-3">
+                    <a href="product-detail.html" class="anker">
+                    <div class="card">
+                        <img src="images/tile8.png" class="card-img-top" alt="tile">
+                        <div class="card-body text-center">
+                          <p class="card-text tile-p">Sicily Grey 30x60</p>
+                            <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49 SAR</p>
+                        </div>
+                      </div>
+                      </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="bg-black pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 pb-3 text-center text-lg-start">
+                    <a href="index.html"><img src="images/logo-white.png" alt="logo"></a>
+                </div>
+                <div class="col-6 col-lg-3 text-white pb-3 text-center text-lg-start">
+                    <h4 class="footer-head">Products</h4>
+                    <ul class="p-0 m-0">
+                        <li style="list-style-type: none;"><a href="#" class="foot-a text-white">Sand Stone</a></li>
+                        <li style="list-style-type: none;"><a href="#" class="foot-a">Stone</a></li>
+                        <li style="list-style-type: none;"><a href="#" class="foot-a">Cement</a></li>
+                        <li style="list-style-type: none;"><a href="#" class="foot-a">Soft Stone</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 text-white pb-3 text-center text-lg-start">
+                    <h4 class="footer-head">Services</h4>
+                    <ul class="p-0 m-0">
+                        <li style="list-style-type: none;"><a href="#" class="foot-a">Measurement Service</a></li>
+                        <li style="list-style-type: none;"><a href="#" class="foot-a">Product Advice</a></li>
+                        <li style="list-style-type: none;"><a href="#" class="foot-a">Interior Design</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3 text-white pb-3 text-center text-lg-start">
+                    <h4 class="footer-head">Contact information</h4>
+                    <p class="m-0 footer-p">3181 Al Imam Saud Ibn Abdul Aziz Branch Rd, </p>
+                    <p class="m-0 footer-p">An Nuzhah, Riyadh 12474,</p>
+                    <p class="m-0 footer-p">Saudi Arabia</p>
+                </div>
+            </div>
+  
+            <div class="row">
+                <div class="col text-center text-lg-start">
+                    <a href="#" class="text-white pe-2"><i class="bi bi-facebook h4"></i></a>
+                    <a href="#" class="text-white pe-2"><i class="bi bi-twitter h4"></i></a>
+                    <a href="#" class="text-white pe-2"><i class="bi bi-instagram h4"></i></a>
+                </div>
+                
+            </div>
+  
+  
+            <div class="row pb-3">
+                <div class="col-12 col-lg-6 pt-3 text-center text-lg-start">
+                    <p class="footer-pp">Copyright © 2022 | All Rights Reserved.</p>
+                </div>
+  
+                <div class="col-12 col-lg-6 pt-3 text-center text-lg-end">
+                    <p class="footer-pp">Created with love by <b><a href="#" class="text-white" style="text-decoration: none;">thecreation.design</a></b></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+    </script>
+</body>
+</html> 

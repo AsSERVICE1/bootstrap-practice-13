@@ -1,0 +1,26 @@
+//custom variables
+
+$primary:#161616;
+$secondary:#3DD8D0;
+
+//import the functions and variables
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-color:
+(
+    "white":#fff,
+    "black":#000,
+    "home":#979797,
+    "back":#F7F7F7,
+    "carddd":#252525,
+    "bread":#222222,
+    "check":#FAFAFA
+
+
+);
+
+$theme-colors: map-merge($custom-theme-color , $theme-colors );
+//import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap'; 

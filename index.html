@@ -1,0 +1,571 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sass/main.scss">    
+
+    <title>Ecommerce - Home</title>
+
+   <style>
+        section{
+            padding:60px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container d-none d-lg-block">
+        <nav class="navbar">
+            <div class="container justify-content-center">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" width="162px" height="57px">
+              </a>
+            </div>
+          </nav>
+        <nav class="navbar navbar-expand-lg fixed-sticky">
+            <div class="container-fluid my-2">
+              <div class=" d-none d-lg-flex">
+                <a href="#" class="text-black"><i class="bi bi-search"></i></a>
+              </div>
+              <form class="d-none d-lg-flex m-0 order-lg-2 rounded" id="con" role="search">
+                <a href="cart.html"><i class="bi bi-cart h4 pe-4 text-black"></i></a>
+                <a href="#"><i class="bi bi-heart h4 pe-4 text-black"></i></a>
+                <a href="#"><i class="bi bi-person h4 pe-4 text-black"></i></a>
+              </form>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                    <a class="nav-link active text-home pe-4 text-uppercase nav-text" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Spaces</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Product & services</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">showrooms</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Company</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Media</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+          </nav>
+    </div>
+
+
+    <!--for mobile-->
+
+    <div class="container d-block d-lg-none">
+        <nav class="navbar">
+            <div class="container justify-content-center text-center">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" width="60%">
+              </a>
+            </div>
+          </nav>
+        <nav class="navbar navbar-expand-lg fixed-sticky" style="margin-top: -66px;">
+            <div class="container-fluid my-2">
+              <div class=" d-none d-lg-flex">
+                <a href="#" class="text-black"><i class="bi bi-search"></i></a>
+              </div>
+              <form class=" m-0 order-2 rounded" id="con" role="search">
+                <a href="cart.html"><i class="bi bi-cart h4 pe-4 text-black"></i></a>
+              </form>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                    <a class="nav-link active text-home pe-4 text-uppercase nav-text" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Spaces</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Product & services</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">showrooms</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Company</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Media</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+          </nav>
+    </div>
+
+
+
+
+
+    <section class="bg-hero">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-12 col-lg-6 trans p-2 p-lg-5 text-center text-lg-start">
+                    <h2 class="hero-head">New Generation Ceramic Tile </h2>
+                    <p class="hero-p">Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend aptent dapibus metus maecenas consequat. Elementum 
+                        interdum a semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra sagittis sit aliquet at. Magna nam platea justo.
+                    </p>
+                    <a href="catalog.html" class="btn btn-white rounded-2 hero-a">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="vector">
+    <section >
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-12 col-lg-8">
+                    <h3 class="s2-h3">Products</h3>
+                    <hr class="s2-hr">
+                    <p class="s2-p">lorem Ipsum is simple dummy text of the printing and typesetting industry. Lorem Ipsum has been the Industry's standard dummy text</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-5 pb-4">
+                    <a href="product-detail.html" class="anker">
+                    <img src="images/product1.png" width="100%" alt="tiles">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-10 product">
+                            <h4 class="m-0 product-h4">Bathroom Tiles</h4>
+                            <p class="m-0 product-p">Ante mus blandit sapien sociosqu per consequat ad.</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-lg-3 pb-4">
+                    <a href="product-detail.html" class="anker">
+                    <img src="images/product2.png" width="100%" alt="marbles">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-10 product">
+                            <h4 class="m-0 product-h4">Marble</h4>
+                            <p class="m-0 product-p">Ante mus blandit sapien sociosqu</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="row pb-4">
+                        <a href="product-detail.html" class="anker">
+                        <img src="images/product3.png" width="100%" alt="marbles">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-10 product">
+                                <h4 class="m-0 product-h4">Outdoor Flooring</h4>
+                                <p class="m-0 product-p">Ante mus blandit sapien sociosqu per consequat ad.</p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="product-detail.html" class="anker">
+                        <img src="images/product4.png" width="100%" alt="marbles">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-10 product">
+                                <h4 class="m-0 product-h4">Kitchen Interior</h4>
+                                <p class="m-0 product-p">Ante mus blandit sapien sociosqu per consequat ad.</p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row d-none d-lg-flex justify-content-center">
+                <div class="col-lg-1" style="align-self: center;">
+                    <div class="card bg-back p-4" style="width: 42em; margin-bottom: 25px;">
+                        <div class="card-body text-black">
+                          <h4 class="card-title vision-h4 fw-bold">Vision</h4>
+                          <p class="card-text vision-p">Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend aptent dapibus metus maecenas consequat. Elementum interdum
+                            a semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra sagittis sit aliquet at. Magna nam platea justo.
+                          </p>
+                          <a href="#" class="card-link btn btn-black rounded-2 px-5">Learn More</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-11">
+                    <img src="images/vision.png" width="100%" alt="projects">
+                </div>
+            </div>
+            <div class="row d-flex d-lg-none justify-content-center">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card bg-backkk text-white" style="width: 100%;">
+                            <img src="images/vision.png" width="100%" alt="projects">
+                            <div class="card-body text-black">
+                                <h4 class="card-title vision-h4 fw-bold">Vision</h4>
+                                <p class="card-text vision-p">Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend aptent dapibus metus maecenas consequat. Elementum interdum
+                                  a semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra sagittis sit aliquet at. Magna nam platea justo.
+                                </p>
+                                <a href="#" class="card-link btn btn-black rounded-2 px-5">Learn More</a>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8 text-center text-lg-start">
+                    <div class="row">
+                        <div class="col-12 col-lg-7">
+                            <h3 class="s4-h3">Creative Solutions by Professional Designers</h3>
+                            <p class="s4-p">Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend aptent dapibus metus maecenas consequat. Elementum interdum a semper.
+                                Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra sagittis sit aliquet at. Magna nam platea justo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row pb-4">
+                        <div class="col-12 col-lg-4 pb-3">
+                            <img src="images/pic1.png" width="100%" alt="pic">
+                        </div>
+                        <div class="col-12 col-lg-4 pb-3">
+                            <img src="images/pic2.png" width="100%" alt="pic">
+                        </div>
+                        <div class="col-12 col-lg-4 pb-3">
+                            <img src="images/pic3.png" width="100%" alt="pic">
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-black rounded-2 text-uppercase px-4 mb-4">Read more</a>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <img src="images/product-main.png" width="100%" alt="pic">
+                    <div class="row justify-content-end" style="align-items: center;">
+                        <div class="col-5 p-0">
+                            <div class="boxxxx d-flex ">
+                                <a href="https://www.youtube.com/">
+                                <i class="bi bi-play-circle-fill h1 m-0"></i>
+                                </a>
+                                <div class="row ps-4">
+                                    <p class="vid-p p-0">Watch</p>
+                                    <p class="vid-pp p-0">Video-tour</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container">
+            <div class="row text-center justify-content-center mb-3">
+                <div class="col-12 col-lg-8">
+                    <h3 class="s2-h3">Projects</h3>
+                    <hr class="s2-hr">
+                    <p class="s2-p">lorem Ipsum is simple dummy text of the printing and typesetting industry. Lorem Ipsum has been the Industry's standard dummy text</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12 col-lg-3 mb-3">
+                    <img src="images/projects1.png" class="mb-4" width="100%" alt="project">
+                    <h4 class="proj-h4">Kingdom Tower</h4>
+                    <p class="proj-p">Marble Flooring</p>
+                </div>
+
+                <div class="col-12 col-lg-3 mb-3">
+                    <img src="images/projects2.png" class="mb-4" width="100%" alt="project">
+                    <h4 class="proj-h4">Dubai Mall</h4>
+                    <p class="proj-p">Wood Flooring</p>
+                </div>
+
+                <div class="col-12 col-lg-3 mb-3">
+                    <img src="images/projects3.png" class="mb-4" width="100%" alt="project">
+                    <h4 class="proj-h4">King Road Offices</h4>
+                    <p class="proj-p">Outdoor Flooring</p>
+                </div>
+
+                <div class="col-12 col-lg-3 mb-3">
+                    <img src="images/projects4.png" class="mb-4" width="100%" alt="project">
+                    <h4 class="proj-h4">Beach Tower Alupang</h4>
+                    <p class="proj-p">Wood Flooring</p>
+                </div>
+            </div>
+            
+            <div class="row text-center justify-content-center">
+                <div class="col-6">
+                    <a href="catalog.html" class="btn btn-black rounded-2 px-5">View all</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section>
+        <div class="container">
+            <div class="row text-center justify-content-center mb-3">
+                <div class="col-12 col-lg-8">
+                    <h3 class="s2-h3">Tile Collections</h3>
+                    <hr class="s2-hr">
+                    <p class="s2-p">lorem Ipsum is simple dummy text of the printing and typesetting industry. Lorem Ipsum has been the Industry's standard dummy text</p>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 col-lg-3 mb-3">
+                    <a href="product-detail.html" class="anker">
+                    <div class="card">
+                        <img src="images/tile1.png" class="card-img-top" alt="tile">
+                        <div class="card-body text-center">
+                          <p class="card-text tile-p">Zurich Vision 60x60</p>
+                            <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 237.99 SAR</p>
+                        </div>
+                      </div>
+                      </a>
+                </div>
+
+                <div class="col-12 col-lg-3 mb-3">
+                    <a href="product-detail.html" class="anker">
+                    <div class="card">
+                        <img src="images/tile2.png" class="card-img-top" alt="tile">
+                        <div class="card-body text-center">
+                          <p class="card-text tile-p">Zurich Pearl 60x60</p>
+                            <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49 SAR</p>
+                        </div>
+                      </div>
+                      </a>
+                </div>
+                
+                <div class="col-12 col-lg-3 mb-3">
+                    <a href="product-detail.html" class="anker">
+                    <div class="card">
+                        <img src="images/tile3.png" class="card-img-top" alt="tile">
+                        <div class="card-body text-center">
+                          <p class="card-text tile-p">Zurich Grey 60x60</p>
+                            <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49 SAR</p>
+                        </div>
+                      </div>
+                      </a>
+                </div>
+
+                <div class="col-12 col-lg-3 mb-3">
+                    <a href="product-detail.html" class="anker">
+                    <div class="card">
+                        <img src="images/tile4.png" class="card-img-top" alt="tile">
+                        <div class="card-body text-center">
+                          <p class="card-text tile-p">Zurich Dark Grey 60x60</p>
+                            <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49 SAR</p>
+                        </div>
+                      </div>
+                      </a>
+                </div>
+
+                <div class="col-12 col-lg-3 mb-3">
+                    <a href="product-detail.html" class="anker">
+                    <div class="card">
+                        <img src="images/tile5.png" class="card-img-top" alt="tile">
+                        <div class="card-body text-center">
+                          <p class="card-text tile-p">Windsor White Oak</p>
+                            <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49</p>
+                        </div>
+                      </div>
+                      </a>
+                </div>
+
+                <div class="col-12 col-lg-3 mb-3">
+                    <a href="product-detail.html" class="anker">
+                    <div class="card">
+                        <img src="images/tile6.png" class="card-img-top" alt="tile">
+                        <div class="card-body text-center">
+                          <p class="card-text tile-p">Sicily Grey Decor 30x60</p>
+                            <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49 SAR</p>
+                        </div>
+                      </div>
+                      </a>
+                </div>
+
+                <div class="col-12 col-lg-3 mb-3">
+                    <a href="product-detail.html" class="anker">
+                    <div class="card">
+                        <img src="images/tile7.png" class="card-img-top" alt="tile">
+                        <div class="card-body text-center">
+                          <p class="card-text tile-p">Sardinia White</p>
+                            <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49 SAR</p>
+                        </div>
+                      </div>
+                      </a>
+                </div>
+
+                <div class="col-12 col-lg-3 mb-3">
+                    <a href="product-detail.html" class="anker">
+                    <div class="card">
+                        <img src="images/tile8.png" class="card-img-top" alt="tile">
+                        <div class="card-body text-center">
+                          <p class="card-text tile-p">Sicily Grey 30x60</p>
+                            <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49 SAR</p>
+                        </div>
+                      </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="row text-center">
+                <div class="col">
+                    <a href="catalog.html" class="btn btn-black rounded-2 text-uppercase px-4 py-2">More products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container">
+            <div class="row d-none d-lg-flex justify-content-center">
+                <div class="col-lg-7">
+                    <img src="images/foot-top.png" width="100%" alt="pic">
+                </div>
+                <div class="col-lg-5" style="align-self: center; margin-left: -100px;">
+                    <div class="card bg-back" style="width: 34em; margin-bottom: 25px; box-shadow: 0px 0px 0px; border: 0px; padding: 66px 50px">
+                        <div class="card-body text-black">
+                          <h4 class="card-title foottop-h4 fw-bold">Our Showrooms</h4>
+                          <p class="card-text vision-p">Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                          </p>
+                          <a href="#" class="card-link btn btn-black rounded-2 px-5">Learn More</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row d-flex d-lg-none justify-content-center">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card bg-backkk text-white" style="width: 100%;">
+                            <img src="images/foot-top.png" class="card-img-top" width="100%" alt="pic">
+                            <div class="card-body text-black">
+                              <h5 class="card-title foottop-h4 fw-bold">Our Showrooms</h5>
+                              <p class="card-text vision-p">Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                              <a href="#" class="btn btn-black rounded-2">Learn More</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</section>
+
+
+    <footer class="bg-black pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 pb-3 text-center text-lg-start">
+                    <a href="index.html"><img src="images/logo-white.png" alt="logo"></a>
+                </div>
+                <div class="col-6 col-lg-3 text-white pb-3 text-center text-lg-start">
+                    <h4 class="footer-head">Products</h4>
+                    <ul class="p-0 m-0">
+                        <li style="list-style-type: none;"><a href="#" class="foot-a text-white">Sand Stone</a></li>
+                        <li style="list-style-type: none;"><a href="#" class="foot-a">Stone</a></li>
+                        <li style="list-style-type: none;"><a href="#" class="foot-a">Cement</a></li>
+                        <li style="list-style-type: none;"><a href="#" class="foot-a">Soft Stone</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 text-white pb-3 text-center text-lg-start">
+                    <h4 class="footer-head">Services</h4>
+                    <ul class="p-0 m-0">
+                        <li style="list-style-type: none;"><a href="#" class="foot-a">Measurement Service</a></li>
+                        <li style="list-style-type: none;"><a href="#" class="foot-a">Product Advice</a></li>
+                        <li style="list-style-type: none;"><a href="#" class="foot-a">Interior Design</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3 text-white pb-3 text-center text-lg-start">
+                    <h4 class="footer-head">Contact information</h4>
+                    <p class="m-0 footer-p">3181 Al Imam Saud Ibn Abdul Aziz Branch Rd, </p>
+                    <p class="m-0 footer-p">An Nuzhah, Riyadh 12474,</p>
+                    <p class="m-0 footer-p">Saudi Arabia</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col text-center text-lg-start">
+                    <a href="#" class="text-white pe-2"><i class="bi bi-facebook h4"></i></a>
+                    <a href="#" class="text-white pe-2"><i class="bi bi-twitter h4"></i></a>
+                    <a href="#" class="text-white pe-2"><i class="bi bi-instagram h4"></i></a>
+                </div>
+                
+            </div>
+
+
+            <div class="row pb-3">
+                <div class="col-12 col-lg-6 pt-3 text-center text-lg-start">
+                    <p class="footer-pp">Copyright © 2022 | All Rights Reserved.</p>
+                </div>
+
+                <div class="col-12 col-lg-6 pt-3 text-center text-lg-end">
+                    <p class="footer-pp">Created with love by <b><a href="#" class="text-white" style="text-decoration: none;">thecreation.design</a></b></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+    </script>
+</body>
+</html> 

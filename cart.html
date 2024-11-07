@@ -1,0 +1,442 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sass/main.scss">       
+    <title>Ecommerce - Cart</title>
+
+   <style>
+        section{
+            padding:60px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container d-none d-lg-block">
+        <nav class="navbar">
+            <div class="container justify-content-center">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" width="162px" height="57px">
+              </a>
+            </div>
+          </nav>
+        <nav class="navbar navbar-expand-lg fixed-sticky">
+            <div class="container-fluid my-2">
+              <div class=" d-none d-lg-flex">
+                <a href="#" class="text-black"><i class="bi bi-search"></i></a>
+              </div>
+              <form class="d-none d-lg-flex m-0 order-lg-2 rounded" id="con" role="search">
+                <a href="cart.html"><i class="bi bi-cart h4 pe-4 text-black"></i></a>
+                <a href="#"><i class="bi bi-heart h4 pe-4 text-black"></i></a>
+                <a href="#"><i class="bi bi-person h4 pe-4 text-black"></i></a>
+              </form>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                    <a class="nav-link active text-home pe-4 text-uppercase nav-text" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Spaces</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Product & services</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">showrooms</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Company</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Media</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+          </nav>
+    </div>
+
+
+    <!--for mobile-->
+
+    <div class="container d-block d-lg-none">
+        <nav class="navbar">
+            <div class="container justify-content-center text-center">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" width="60%">
+              </a>
+            </div>
+          </nav>
+        <nav class="navbar navbar-expand-lg fixed-sticky" style="margin-top: -66px;">
+            <div class="container-fluid my-2">
+              <div class=" d-none d-lg-flex">
+                <a href="#" class="text-black"><i class="bi bi-search"></i></a>
+              </div>
+              <form class=" m-0 order-2 rounded" id="con" role="search">
+                <a href="cart.html"><i class="bi bi-cart h4 pe-4 text-black"></i></a>
+              </form>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                    <a class="nav-link active text-home pe-4 text-uppercase nav-text" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Spaces</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Product & services</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">showrooms</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Company</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Media</a>
+                  </li>
+                  <li class="nav-item pe-2">
+                    <a class="nav-link text-black pe-4 text-uppercase nav-text" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+          </nav>
+    </div>
+
+
+
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="cart-h3">Shopping Cart</h3>
+                </div>
+                <div class="col-12">
+                    <a href="product-detail.html" class="cont-cart">
+                        <i class="bi bi-arrow-left"></i>
+                        <p class="cart-p">Continue Shopping</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-7 bg-back p-3">
+
+                        <div class="row py-3 align-items-center pt-3 d-none d-lg-flex">
+                            <div class="col-6 text-end">
+                                <h5>Unit Price</h5>
+                            </div>
+                            <div class="col-2 text-center">
+                                <h5>QTY</h5>
+                            </div>
+                            <div class="col-2 text-center">
+                                <h5>Total SAR</h5>
+                            </div>
+                        </div>
+
+                        <hr class="d-none d-lg-flex">
+
+                        <div class="row py-3 align-items-center">
+                            <div class="col-4 col-lg-2">
+                                <img src="images/product-det-1.png" width="100%" alt="product">
+                            </div>
+                            <div class="col-8 col-lg-10">
+                                <div class="row align-items-center">
+                                  <div class="col-12 col-lg-3">
+                                        <h5 class="product-h5 m-0">Product Name</h5>
+                                        <p class="product-p m-0 pb-2 pb-0">Lorem Ipsum</p>
+                                    </div>
+                                    <div class="col-12 col-lg-2 pb-2 pb-0">
+                                        <h5 class="product-h5 m-0">199.00</h5>
+                                    </div>
+                                    <div class="col-12 col-lg-3 pb-2 pb-0" style="display: flex;">
+                                        <a href="#" class="boxxxxxxxx me-3"><i class="bi bi-dash h5"></i></a>
+                                        <p class="m-0">1</p>
+                                        <a href="#" class="boxxxxxxxx ms-3"><i class="bi bi-plus h5"></i></a>
+                                      
+                                    </div>
+                                    <div class="col-12 col-lg-2 pb-2 pb-0">
+                                        <h5 class="product-h5 m-0">199.00</h5>
+                                    </div>
+                                    <div class="col-12 col-lg-2 pb-2 pb-0">
+                                        <a href="#" class="anker"><i class="bi bi-trash h5"></i></a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row py-3 align-items-center">
+                            <div class="col-4 col-lg-2">
+                                <img src="images/product-det-1.png" width="100%" alt="product">
+                            </div>
+                            <div class="col-8 col-lg-10">
+                                <div class="row align-items-center">
+                                  <div class="col-12 col-lg-3">
+                                        <h5 class="product-h5 m-0">Product Name</h5>
+                                        <p class="product-p m-0 pb-2 pb-0">Lorem Ipsum</p>
+                                    </div>
+                                    <div class="col-12 col-lg-2 pb-2 pb-0">
+                                        <h5 class="product-h5 m-0">199.00</h5>
+                                    </div>
+                                    <div class="col-12 col-lg-3 pb-2 pb-0" style="display: flex;">
+                                        <a href="#" class="boxxxxxxxx me-3"><i class="bi bi-dash h5"></i></a>
+                                        <p class="m-0">1</p>
+                                        <a href="#" class="boxxxxxxxx ms-3"><i class="bi bi-plus h5"></i></a>
+                                      
+                                    </div>
+                                    <div class="col-12 col-lg-2 pb-2 pb-0">
+                                        <h5 class="product-h5 m-0">199.00</h5>
+                                    </div>
+                                    <div class="col-12 col-lg-2 pb-2 pb-0">
+                                        <a href="#" class="anker"><i class="bi bi-trash h5"></i></a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+
+
+                        <hr>
+
+
+                        <div class="row py-3 align-items-center">
+                            <div class="col-4 col-lg-2">
+                                <img src="images/product-det-1.png" width="100%" alt="product">
+                            </div>
+                            <div class="col-8 col-lg-10">
+                                <div class="row align-items-center">
+                                  <div class="col-12 col-lg-3">
+                                        <h5 class="product-h5 m-0">Product Name</h5>
+                                        <p class="product-p m-0 pb-2 pb-0">Lorem Ipsum</p>
+                                    </div>
+                                    <div class="col-12 col-lg-2 pb-2 pb-0">
+                                        <h5 class="product-h5 m-0">199.00</h5>
+                                    </div>
+                                    <div class="col-12 col-lg-3 pb-2 pb-0" style="display: flex;">
+                                        <a href="#" class="boxxxxxxxx me-3"><i class="bi bi-dash h5"></i></a>
+                                        <p class="m-0">1</p>
+                                        <a href="#" class="boxxxxxxxx ms-3"><i class="bi bi-plus h5"></i></a>
+                                      
+                                    </div>
+                                    <div class="col-12 col-lg-2 pb-2 pb-0">
+                                        <h5 class="product-h5 m-0">199.00</h5>
+                                    </div>
+                                    <div class="col-12 col-lg-2 pb-2 pb-0">
+                                        <a href="#" class="anker"><i class="bi bi-trash h5"></i></a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+
+
+                       
+                    </div>
+                    <div class="col-12 col-lg-4 bg-back p-3 ms-0 ms-lg-5" style="height: 100%;">
+                        <div class="row justify-content-center">
+                            <select class="form-select options " style="width: 80%;" aria-label="Default select example">
+                                <option selected><p class="vouch-p">Do you have a voucher? <span>(Optional)</span></p></option>
+                                <option value="1">Yes</option>
+                                <option value="2">No</option>
+                              </select>
+                        </div>
+                        <div class="row justify-content-center py-3">
+                            <div class="col-6">
+                                <input type="text" class="form-control" id="code" placeholder="Enter the code">
+                            </div>
+                            <div class="col-6 d-grid">
+                                <a href="#" class="btn btn-black rounded-2">Redeem</a>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center py-3">
+                            <div class="col-5">
+                                <p class="m-0 sub-p">Subtotal</p>
+                                <p class="m-0 sub-pp">Shipping</p>
+                            </div>
+                            <div class="col-5 text-end">
+                                <p class="m-0 sub-p">138,00 SAR</p>
+                                <p class="m-0 sub-pp">5.91SAR</p>
+                            </div>
+                        </div>
+
+
+                        <div class="row justify-content-center py-3">
+                            <div class="col-5">
+                                <p class="m-0 sub-p">Total<span class="sub-ppp">(VAT included)</span></p>
+                            </div>
+                            <div class="col-5 text-end">
+                                <p class="m-0 sub-p">143.91 SAR</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-10 ">
+                                <a href="checkout.html" class="btn btn-black rounded-2 d-block">Safe to checkout</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section>
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-12 col-lg-6">
+                        <h4 class="related-prod">Recently Viewed Products</h4>
+                    </div>
+                </div>
+                <div class="row mb-3 mt-3">
+                    <div class="col-12 col-lg-3 mb-3">
+                        <a href="product-detail.html" class="anker">
+                        <div class="card">
+                            <img src="images/tile5.png" class="card-img-top" alt="tile">
+                            <div class="card-body text-center">
+                              <p class="card-text tile-p">Windsor White Oak</p>
+                                <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49</p>
+                            </div>
+                          </div>
+                        </a>
+                    </div>
+    
+                    <div class="col-12 col-lg-3 mb-3">
+                        <a href="product-detail.html" class="anker">
+                        <div class="card">
+                            <img src="images/tile6.png" class="card-img-top" alt="tile">
+                            <div class="card-body text-center">
+                              <p class="card-text tile-p">Sicily Grey Decor 30x60</p>
+                                <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49 SAR</p>
+                            </div>
+                          </div>
+                          </a>
+                    </div>
+    
+                    <div class="col-12 col-lg-3 mb-3">
+                        <a href="product-detail.html" class="anker">
+                        <div class="card">
+                            <img src="images/tile7.png" class="card-img-top" alt="tile">
+                            <div class="card-body text-center">
+                              <p class="card-text tile-p">Sardinia White</p>
+                                <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49 SAR</p>
+                            </div>
+                          </div>
+                          </a>
+                    </div>
+    
+                    <div class="col-12 col-lg-3 mb-3">
+                        <a href="product-detail.html" class="anker">
+                        <div class="card">
+                            <img src="images/tile8.png" class="card-img-top" alt="tile">
+                            <div class="card-body text-center">
+                              <p class="card-text tile-p">Sicily Grey 30x60</p>
+                                <p class="card-text tile-pp"><span class="text-decoration-line-through" style="font-size: 80%; color: #CACACA;">449.99 SAR</span> 312.49 SAR</p>
+                            </div>
+                          </div>
+                          </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <footer class="bg-black pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3 pb-3 text-center text-lg-start">
+                        <a href="index.html"><img src="images/logo-white.png" alt="logo"></a>
+                    </div>
+                    <div class="col-6 col-lg-3 text-white pb-3 text-center text-lg-start">
+                        <h4 class="footer-head">Products</h4>
+                        <ul class="p-0 m-0">
+                            <li style="list-style-type: none;"><a href="#" class="foot-a text-white">Sand Stone</a></li>
+                            <li style="list-style-type: none;"><a href="#" class="foot-a">Stone</a></li>
+                            <li style="list-style-type: none;"><a href="#" class="foot-a">Cement</a></li>
+                            <li style="list-style-type: none;"><a href="#" class="foot-a">Soft Stone</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-3 text-white pb-3 text-center text-lg-start">
+                        <h4 class="footer-head">Services</h4>
+                        <ul class="p-0 m-0">
+                            <li style="list-style-type: none;"><a href="#" class="foot-a">Measurement Service</a></li>
+                            <li style="list-style-type: none;"><a href="#" class="foot-a">Product Advice</a></li>
+                            <li style="list-style-type: none;"><a href="#" class="foot-a">Interior Design</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-3 text-white pb-3 text-center text-lg-start">
+                        <h4 class="footer-head">Contact information</h4>
+                        <p class="m-0 footer-p">3181 Al Imam Saud Ibn Abdul Aziz Branch Rd, </p>
+                        <p class="m-0 footer-p">An Nuzhah, Riyadh 12474,</p>
+                        <p class="m-0 footer-p">Saudi Arabia</p>
+                    </div>
+                </div>
+      
+                <div class="row">
+                    <div class="col text-center text-lg-start">
+                        <a href="#" class="text-white pe-2"><i class="bi bi-facebook h4"></i></a>
+                        <a href="#" class="text-white pe-2"><i class="bi bi-twitter h4"></i></a>
+                        <a href="#" class="text-white pe-2"><i class="bi bi-instagram h4"></i></a>
+                    </div>
+                    
+                </div>
+      
+      
+                <div class="row pb-3">
+                    <div class="col-12 col-lg-6 pt-3 text-center text-lg-start">
+                        <p class="footer-pp">Copyright © 2022 | All Rights Reserved.</p>
+                    </div>
+      
+                    <div class="col-12 col-lg-6 pt-3 text-center text-lg-end">
+                        <p class="footer-pp">Created with love by <b><a href="#" class="text-white" style="text-decoration: none;">thecreation.design</a></b></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+    </script>
+</body>
+</html> 
