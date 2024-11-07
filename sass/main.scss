@@ -18,8 +18,6 @@ $custom-theme-color:
     "bread":#222222,
     "check":#FAFAFA,
     "mobtrans":#666A6F,
-
-
 );
 
 $theme-colors: map-merge($custom-theme-color , $theme-colors );
