@@ -575,3 +575,22 @@
     text-decoration: none; 
     color: black;
 }
+.hero-head-m
+{
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 22px;
+}
+.hero-p-m
+{
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+}
+.hero-a-m
+{
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 15px;
+    color: #040404;
+}
