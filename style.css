@@ -71,6 +71,7 @@
     padding: 15px;
     border: 1px solid #ffffff;
     margin-top: -57px;
+    height: 100px;
 }
 .product-h4
 {
@@ -579,6 +580,7 @@
 {
     font-family: "Proxima Nova", sans-serif;
     font-weight: bold;
+    font-size: 26px;
     line-height: 22px;
 }
 .hero-p-m
@@ -596,15 +598,4 @@
 .foot-aa
 {
     text-decoration: none;
-}
-@media screen and (max-width: 990px) {
-    h2, .h2
-    {
-        font-size: 26px;
-    }
-}
-@media (min-width: 991px) {
-    h2, .h2 {
-        font-size: 48px;
-    }
 }
