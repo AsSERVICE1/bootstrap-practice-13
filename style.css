@@ -216,7 +216,7 @@
 }
 .footer-head
 {
-    font-family: "Poppins";
+    font-family: Poppins;
     font-weight: 400;
     font-size:  calc(109% + 0vw + 0vh);
     line-height: 150%;
@@ -331,7 +331,7 @@
 }
 .promo-h3
 {
-    font-family: "Poppins";
+    font-family: Poppins;
     font-weight: 400;
     font-size: calc(100% + 1vw + 0vh);
 }
@@ -375,14 +375,14 @@
 }
 .cartt
 {
-    font-family: "Inter";
+    font-family: Inter;
     font-weight: 400;
     font-size: calc(100% + 0vw + 0vh);
     color: #FFFFFF;
 }
 .pro-list
 {
-    font-family: "poppins";
+    font-family: Poppins;
     font-weight: 400;
     font-size: calc(88% + 0vw + 0vh);
     color: #000000;
@@ -391,19 +391,19 @@
 {
     text-decoration: none;
     color: #000000;
-    font-family: "poppins";
+    font-family: Poppins;
     font-weight: 600;
     font-size: calc(88% + 0vw + 0vh);
 }
 .des-p
 {
-    font-family: "poppins";
+    font-family: Poppins;
     font-weight: 400;
     font-size: calc(100% + 0vw + 0vh);
 }
 .related-prod
 {
-    font-family: "poppins";
+    font-family: Poppins;
     font-weight: 400;
     font-size: calc(100% + 0vw + 2vh);
     color: #151515;
@@ -475,7 +475,7 @@
 }
 .sub-p
 {
-    font-family: "Poppins";
+    font-family: Poppins;
     font-weight: 400;
     font-size: calc(130% + 0vw + 0vh)
 }
